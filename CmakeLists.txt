@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.26.3)
 
-set(P_NAME ComputerSimulatorProject)
-project(${P_NAME})
+set(PROJECT_NAME ComputerSimulator)
+project(${PROJECT_NAME})
 
-add_executable(${P_NAME} src/main.cpp)
+set(MY_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
+
+add_subdirectory(src)
